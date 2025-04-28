@@ -1,0 +1,50 @@
+<!--this is a navbar-->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a routerLink="" class="navbar-brand" 
+      ><img src="images/logo.png" alt="logo"
+    /></a>
+    <button
+      class="navbar-toggler ms-5"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        
+      <ul class="navbar-nav me-auto ms-xl-5 mb-2 mb-lg-0 justify-content-end">
+        <li class="nav-item ms-xl-3">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item ms-xl-3">
+          <a class="nav-link" routerLink="shop-category">Shop</a>
+        </li>
+        <li class="nav-item ms-xl-3">
+          <a class="nav-link" routerLink="shopping-cart">Cart</a>
+        </li>
+        <li class="nav-item ms-xl-3">
+          <a class="nav-link" routerLink="our-blog">Blog</a>
+        </li>
+        <li class="nav-item ms-xl-3">
+          <a class="nav-link" routerLink="contact-us">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="icon">
+      <ul>
+        <li class="icons d-none d-xl-block">
+          <i class="bi bi-search ms-2"></i>
+          <i class="bi bi-cart-dash-fill ms-2"></i>
+          <!-- <span>3</span> -->
+        </li>
+        <li><a routerLink="/logister" id="buy-now-link" class="ms-4 ms-md-0">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--this is a navbar end-->

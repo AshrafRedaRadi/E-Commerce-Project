@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*this is a navbar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+nav img{
+    padding: 30px;
+}
+nav img:hover{
+    transform: rotatez(25deg);
+    transition: transform 1s;
+}
+nav .link ul{
+    display: flex;
+    padding: 30px;
+}
+nav .link ul li{
+    display: flex;
+    margin-right: 40px;
+}
+.nav-item{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+}
+.nav-item a:hover{
+    color: blue;
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+nav .icon ul{
+    display: flex;
+}
+nav .icon ul li{
+    display: flex;
+    margin-right: 15px;
+}
+nav .icon ul li.icons{
+    padding: 35px;
+}
+nav .icon ul li i.fa-magnifying-glass{
+    margin-right: 15px;
+}
+nav .icon ul li span{
+    position: relative;
+    bottom: 12px;
+    left: -1px;
+    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    background-color: rgb(89, 89, 250);
+     color: white;
+     padding: 2.5px 2px 1px 1.5px;
+     border-radius: 50%;
+}
+nav .icon ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 45px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav .icon ul li a:hover{
+    color: white;
+    background-color: rgb(89, 89, 250);
+    transform: scale(1.2);
+    transition: transform 1.5s;
+}
+#buy-now-link{padding-top: 15px;}

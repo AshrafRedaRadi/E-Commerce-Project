@@ -1,0 +1,128 @@
+<!--this is header-->
+<header>
+  <div>
+    <h1>Shopping Cart</h1>
+    <a href="page1.html">Home</a> - <a href="page3.html">Shopping Cart</a>
+  </div>
+</header>
+<!--this is shopping card-->
+<table>
+  <thead>
+    <tr>
+      <th><h5>Product</h5></th>
+      <th><h5>Price</h5></th>
+      <th><h5>Quantity</h5></th>
+      <th><h5>Total</h5></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="d-flex align-items-center">
+        <img src="images/cart/cart1.png" alt="" class="me-2" />
+        <p>Minimalistic shop for multipurpose use</p>
+      </td>
+      <td>
+        <p>$360.00</p>
+      </td>
+      <td>
+        <input type="number" name="number" value="1" min="1" />
+      </td>
+      <td>
+        <p>$720.00</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="d-flex align-items-center">
+        <img src="images/cart/cart2.png" alt="" class="me-2" />
+        <p>Minimalistic shop for multipurpose use</p>
+      </td>
+      <td>
+        <p>$360.00</p>
+      </td>
+      <td>
+        <input type="number" name="number" value="1" min="1" />
+      </td>
+      <td>
+        <p>$720.00</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="d-flex align-items-center">
+        <img src="images/cart/cart3.png" alt="" class="me-2" />
+        <p>Minimalistic shop for multipurpose use</p>
+      </td>
+      <td>
+        <p>$360.00</p>
+      </td>
+      <td>
+        <input type="number" name="number" value="1" min="1" />
+      </td>
+      <td>
+        <p>$720.00</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--apply-->
+<section class="apply">
+  <button class="up">Update Cart</button>
+  <div>
+    <input type="text" placeholder="Coupon Code" />
+    <button class="ap">Apply</button>
+    <a href="#" class="pon">Have a Coupon?</a>
+  </div>
+</section>
+<!--subtotal-->
+<section class="total">
+  <p>Subtotal</p>
+  <p>$2160.00</p>
+</section>
+<!--shipping form-->
+<form action="">
+  <div class="ship">
+    <div>
+      <p>Shipping</p>
+      <label for="flat5">Flat Rate: $5.00</label>
+      <input type="radio" name="Shipping" id="flat5" />
+    </div>
+    <div>
+      <label for="free">Free Shipping</label>
+      <input type="radio" name="Shipping" id="free" />
+    </div>
+    <div>
+      <label for="flat10">Flat Rate: $10.00</label>
+      <input type="radio" name="Shipping" id="flat10" />
+    </div>
+    <div>
+      <label for="local">Local Delivery: $2.00</label>
+      <input type="radio" name="Shipping" id="local" checked />
+    </div>
+  </div>
+  <!--Calc Shipping-->
+  <div class="calc">
+    <select name="Calc Shipping">
+      <option value="Calculate Shipping">Calculate Shipping</option>
+    </select>
+  </div>
+  <!--selecting-->
+  <div class="selecting">
+    <div>
+      <select name="country">
+        <option value="Bangladesh">Bangladesh</option>
+      </select>
+    </div>
+    <div>
+      <select name="country">
+        <option value="Select a State">Select a State</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" name="post/zip code" placeholder="Postcode/Zipcode" />
+    </div>
+    <a href="#">Update Details</a>
+  </div>
+</form>
+<section class="out">
+    <a href="#">Continue Shopping</a>
+    <a href="#">Proceed To Checkout</a>
+  </section>

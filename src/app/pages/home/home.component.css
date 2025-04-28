@@ -1,0 +1,523 @@
+/*this is header*/
+header {
+    display: grid;
+    grid-template-columns: 35.4% 64.6%;
+    background-color: rgb(241, 246, 247);
+    overflow: hidden;
+    height: 100vh;
+}
+
+header .div1 {
+    background-color: rgb(56, 74, 235);
+}
+
+@keyframes place {
+    from {
+        position: relative;
+        top: 9%;
+        left: 39%;
+    }
+
+    to {
+        position: relative;
+        top: 9%;
+        left: 1%;
+    }
+}
+
+header .div1 img {
+    height: 75%;
+    position: relative;
+    top: 9%;
+    left: 39%;
+    animation: place 3s 1s 5 alternate backwards;
+}
+
+header .div2 {
+    position: relative;
+    top: 18%;
+    left: -30%;
+
+    @media (min-width: 992px) {
+        left: 18%;
+    }
+
+    font-family: Roboto;
+}
+
+header .div2 p {
+    font-size: 30px;
+    color: rgb(78, 78, 78);
+    margin-bottom: 12px;
+}
+
+header .div2 h1 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: bolder;
+}
+
+header .div2 pre {
+    color: rgb(121, 119, 119);
+    font-size: 15px;
+    font-family: Roboto;
+    line-height: 25px;
+    margin-top: 25px;
+    display: none;
+}
+
+header .div2 a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(56, 74, 235);
+    color: white;
+    font-size: 15px;
+    padding: 15px 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+header .div2 a:hover {
+    color: rgb(56, 74, 235);
+    background-color: black;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/*this is gallery*/
+.gal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 8%;
+}
+
+.gal img {
+    width: calc(98.5%/3);
+}
+
+/*this is trending product*/
+.trend {
+    padding: 5%;
+}
+
+.trend .header p {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+}
+
+.trend .header h1 {
+    font-family: Oswald;
+    font-size: 35px;
+}
+
+.trend .header span {
+    padding: 9px;
+    border-bottom: 2px solid rgb(56, 74, 235);
+}
+
+.trend img {
+    width: 100%;
+}
+
+.trend img:hover {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.trend .pro1,
+.pro2 {
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.trend .pro1 div,
+.pro2 div {
+    margin-right: 9%;
+    width: 41%;
+
+    @media (min-width: 576px) {
+        margin-right: 4%;
+        width: 21%;
+    }
+}
+
+
+.trend .pro1 p,
+.pro2 p {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.trend .pro1 div h3,
+.pro2 div h3 {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.trend .pro1 div h4,
+.pro2 div h4 {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+    font-weight: 400px;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+/*winter sale*/
+.sale {
+
+    background: url("../../../../public/images/home/parallax-bg.png") center / cover no-repeat;
+    margin-bottom: 15%;
+}
+
+.sale .shop {
+    width: 60%;
+
+    @media (min-width: 600px) {
+        width: 20%;
+    }
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.sale .shop .up {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.sale .shop .win {
+    font-family: Oswald;
+    font-size: 28px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.sale .shop .him {
+    font-family: Roboto;
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+}
+
+.sale .shop a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(56, 74, 235);
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 4% 15%;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+
+.sale .shop a:hover {
+    color: rgb(56, 74, 235);
+    background-color: white;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/*Best Sellers*/
+.best {
+    /* margin: auto 10%; */
+    margin: 5% 10%;
+}
+
+.best .head h2 {
+    font-family: Oswald;
+    font-size: 35px;
+}
+
+.best .head span {
+    padding: 9px;
+    border-bottom: 2px solid rgb(56, 74, 235);
+}
+
+.best .sell {
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.best .sell div {
+    /* margin-right: 4%; */
+    width: 20%;
+}
+
+.best .sell div img {
+    width: 100%;
+}
+
+.best .sell div img:hover {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.best .sell div p {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+    margin-top: 20px;
+}
+
+.best .sell div h3 {
+    font-family: Oswald;
+    font-weight: 400;
+    height: 20px;
+    font-size: 20px;
+}
+
+.best .sell div h4 {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+    font-weight: 400px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.best .bi-arrow-right {
+    position: relative;
+    bottom: 42vh;
+    left: 100%;
+    color: rgb(78, 93, 227);
+    font-size: 18px;
+    background-color: rgb(241, 246, 247);
+    padding: 12px 12px;
+}
+
+.best .bi-arrow-left {
+    position: relative;
+    top: 29vh;
+    right: 4.5%;
+    color: rgb(78, 93, 227);
+    font-size: 18px;
+    background-color: rgb(241, 246, 247);
+    padding: 12px 12px;
+}
+
+/*Latest News*/
+.latest {
+    margin: 5% 10%;
+}
+
+.latest h2 {
+    font-family: Oswald;
+    font-size: 36px;
+}
+
+.latest span {
+    padding: 9px;
+    border-bottom: 2px solid rgb(56, 74, 235);
+}
+
+.latest .news {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest .news div {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    @media (min-width: 640px) {
+        width: 31%;
+    }
+}
+
+.latest .news div img {
+    width: 100%;
+}
+
+.latest .news div p {
+    margin-top: 3%;
+    font-size: .9rem;
+    color: rgb(121, 119, 119);
+}
+
+
+.latest .news div h3 {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    line-height: 1.3;
+}
+
+.latest .news div a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    margin-top: 25px;
+}
+
+.latest .news div a:hover {
+    color: blue;
+}
+
+.latest .news div .bi-chat-dots {
+    margin-left: 20px;
+    margin-right: 3px;
+}
+
+.read_more_btn {
+    padding: 3% 4%;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 500;
+    font-size: .8rem;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.read_more_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.read_more_btn:hover {
+    color: #e8e8e8;
+}
+
+.read_more_btn:hover::before {
+    width: 100%;
+}
+
+/* slider style */
+.slider {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 20vw;
+    margin: 1%;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 6%;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+}
+
+.slide p {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+    margin-bottom: 1%;
+    font-size: .8rem;
+}
+
+.slide h3 {
+    transition: all .5s;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.slide h3:hover {
+    color: blue;
+    transform: scale(1.1);
+}
+
+.slide h4 {
+    font-family: Roboto;
+    color: rgb(121, 119, 119);
+    font-weight: 500;
+    font-size: .9rem;
+    margin-top: 1%;
+}
+
+/* end of slider */
+/*Update from anywhere*/
+.update {
+    width: 73.5%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: -2px -2px 20px rgba(32, 77, 126, 0.1);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    display: none;
+}
+
+.update h2 {
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.update p {
+    font-family: Roboto;
+    color: rgb(136, 134, 134);
+    margin-top: 10px;
+}
+
+form input[type=email] {
+    width: 30%;
+    padding: 15px 20px;
+    border: 0.1px solid rgb(233, 228, 228);
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-right: 13px;
+}
+
+form input::placeholder {
+    font-family: Roboto;
+    color: rgb(149, 149, 149);
+    font-size: 14px;
+}
+
+form input[type=submit] {
+    color: white;
+    background-color: rgb(56, 74, 235);
+    font-family: Roboto;
+    font-size: 15px;
+    padding: 15px 35px;
+    border: 0.1px solid rgb(233, 228, 228);
+    border-radius: 30px;
+}
+
+form input[type=submit]:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}

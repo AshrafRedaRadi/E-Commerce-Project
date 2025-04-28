@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*this is header*/
+header {
+    background-color: rgb(241, 246, 247);
+    text-align: center;
+    padding: 10% 0;
+}
+
+header div h1 {
+    font-family: Oswald;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+
+header div a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: .8rem;
+    color: rgb(135, 133, 133);
+}
+
+header div a:hover {
+    color: blue;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/*this is shopping card*/
+table {
+    margin: 5% 15%;
+    margin-bottom: 0;
+    width: 68%;
+}
+
+table th,
+td {
+    border-bottom: 1px solid rgb(228, 235, 236);
+    text-align: center;
+    padding: 3% 0%;
+}
+
+/*thead*/
+table thead th h5 {
+    font-family: Oswald;
+    font-size: 1rem;
+}
+
+table thead th:first-child {
+    text-align: left;
+
+    h5 {
+        margin-left: 3%;
+    }
+}
+
+/*tbody*/
+table tbody td img {
+    @media (max-width: 767.98px) {
+        width: 80%;
+    }
+}
+
+table tbody td:nth-child(1) p {
+    font-family: Roboto;
+    font-size: .8rem;
+    color: rgb(135, 133, 133);
+
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+}
+
+table tbody td:nth-child(2),
+td:nth-child(4) p {
+    font-family: Roboto;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+table tbody td input[type=number] {
+    width: 40%;
+    font-size: .8rem;
+    outline: none;
+    border: 1px solid rgb(228, 235, 236);
+    padding: 3%;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0.2;
+}
+
+/*apply*/
+.apply {
+    margin: auto;
+    width: 68%;
+    padding: 3% 0;
+    border-bottom: 1px solid rgb(228, 235, 236);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    @media (max-width: 767.98px) {
+        display: block;
+    }
+}
+
+.apply .up {
+    padding: 1% 4%;
+    border: 0;
+    border-radius: 100px;
+    background-color: rgb(56, 74, 235);
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 500;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.apply .up:hover {
+    background-color: rgb(56, 74, 235);
+    transform: scale(1.1);
+    color: red;
+}
+
+.apply .up:active {
+    background-color: rgb(56, 74, 235);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.apply div {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767.98px) {
+        margin-top: 2%;
+        justify-self: center;
+    }
+}
+
+.apply div input[type=text] {
+    width: 40%;
+
+    @media (max-width: 767.98px) {
+        width: 100px
+    }
+
+    padding: 1% 5%;
+    border: 1px solid rgb(228, 235, 236);
+    border-radius: 30px;
+    outline: none;
+    margin-right: 2%;
+}
+
+.apply div input[type=text]::placeholder {
+    font-family: Roboto;
+    font-size: .7rem;
+    color: rgb(212, 201, 201);
+}
+
+.apply .ap {
+    padding: 1% 4%;
+    border: 0;
+    border-radius: 100px;
+    margin-right: 2%;
+    background-color: rgb(56, 74, 235);
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 500;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.apply .ap:hover {
+    background-color: rgb(56, 74, 235);
+    transform: scale(1.1);
+}
+
+.apply .ap:active {
+    background-color: rgb(56, 74, 235);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.apply a.pon {
+    text-decoration: none;
+    padding: 2% 5%;
+    border: 1px solid rgb(228, 235, 236);
+    border-radius: 30px;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: rgb(249, 249, 255);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*subtotal*/
+.total {
+    margin: auto;
+    width: 68%;
+    padding: 2% 0;
+    border-bottom: 1px solid rgb(228, 235, 236);
+    display: flex;
+    justify-content: end;
+}
+
+.total p {
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.total p:nth-child(2) {
+    margin-left: 18%;
+}
+
+/*shipping form*/
+form {
+    margin: auto;
+    width: 68%;
+    padding: 2%;
+    border-bottom: 1px solid rgb(228, 235, 236);
+    text-align: right;
+}
+
+/*Shipping*/
+form .ship div {
+    margin-bottom: 2%;
+}
+
+form .ship p {
+    display: inline;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-right: 9.5%;
+}
+
+form .ship div label {
+    font-family: Roboto;
+    font-size: .7rem;
+    color: rgb(125, 122, 122);
+    margin-right: 2%;
+}
+
+/*Calc Shipping*/
+form .calc select {
+    padding-right: 1%;
+    margin-top: 1%;
+    border: none;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/*selecting*/
+.selecting div select {
+    width: 40%;
+    padding: 1% 1.5%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 2%;
+    font-family: Roboto;
+    font-size: .7rem;
+    color: rgb(143, 141, 141);
+    background-color: rgb(241, 246, 247);
+}
+
+.selecting div input[type=text] {
+    width: 40%;
+    padding: 1% 1.5%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: Roboto;
+    font-size: .7rem;
+    background-color: rgb(241, 246, 247);
+}
+
+.selecting div input[type=text]::placeholder {
+    color: rgb(143, 141, 141);
+}
+
+.selecting a {
+    text-decoration: none;
+    padding: 1% 4%;
+    border: 1px solid rgb(228, 235, 236);
+    border-radius: 30px;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: rgb(241, 246, 247);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*checkout*/
+.out {
+    margin: auto;
+    width: 68%;
+    padding: 1% 2%;
+    margin-bottom: 80px;
+    text-align: right;
+}
+
+.out a:nth-child(1) {
+    text-decoration: none;
+    padding: 1% 4%;
+    border: 1px solid rgb(228, 235, 236);
+    border-radius: 30px;
+    margin-right: 5px;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: rgb(241, 246, 247);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.out a:nth-child(2) {
+    text-decoration: none;
+    padding: 1% 4%;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-size: .8rem;
+    font-weight: 400;
+    background-color: rgb(56, 74, 235);
+    color: white;
+}
