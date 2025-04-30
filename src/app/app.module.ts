@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { BlogDetailsComponent } from './pages/blog-details/blog-details.componen
 import { ShopSingleComponent } from './pages/shop-single/shop-single.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,13 +30,17 @@ import { FooterComponent } from './shared/footer/footer.component';
     BlogDetailsComponent,
     ShopSingleComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

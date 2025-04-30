@@ -16,29 +16,89 @@
   </div>
   <div class="form">
     <h4>CREATE AN ACCOUNT</h4>
-    <form action="">
+    <form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm" novalidate>
       <div class="div1">
-        <input type="text" name="user name" placeholder="Username" />
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        ngModel
+        #username="ngModel"
+        required
+      />
+      <div *ngIf="username.invalid && username.touched" class="error">
+        Username is required.
+      </div>
       </div>
       <div class="div1">
-        <input type="email" name="email" placeholder="Email Address" />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        ngModel
+        #email="ngModel"
+        required
+        email
+      />
+      <div *ngIf="email.invalid && email.touched" class="error">
+        <div *ngIf="email.errors?.['required']">Email is required.</div>
+        <div *ngIf="email.errors?.['email']">Enter a valid email address.</div>
+      </div>
       </div>
       <div class="div1">
-        <input type="pass" name="password" placeholder="Password" />
+      <input
+      id="w-85"
+        type="password"
+        name="password"
+        placeholder="Password"
+        ngModel
+        #password="ngModel"
+        required
+        minlength="6"
+        [type]="showPassword ? 'text' : 'password'"
+      />
+      <i (click)="showPassword = !showPassword" class="toggle-password">
+        {{ showPassword ? '👁️' : '🙈' }}
+      </i>
+      <div *ngIf="password.invalid && password.touched" class="error">
+        <div *ngIf="password.errors?.['required']">Password is required.</div>
+        <div *ngIf="password.errors?.['minlength']">
+        Password must be at least 6 characters long.
+        </div>
+      </div>
       </div>
       <div class="div1">
-        <input
-          type="pass"
-          name="confirm password"
-          placeholder="Confirm Password"
-        />
+      <input
+        id="w-86"
+        type="password"
+        name="confirmPassword"
+        placeholder="Confirm Password"
+        ngModel
+        #confirmPassword="ngModel"
+        required
+        [type]="showConfirmPassword ? 'text' : 'password'"
+      />
+      <i (click)="showConfirmPassword = !showConfirmPassword" class="toggle-password">
+        {{ showConfirmPassword ? '👁️' : '🙈' }}
+      </i>
+      <div *ngIf="confirmPassword.invalid && confirmPassword.touched" class="error">
+        Confirm Password is required.
+      </div>
+      <div *ngIf="password.value !== confirmPassword.value && confirmPassword.touched" class="error">
+        Passwords do not match.
+      </div>
       </div>
       <div class="div2">
-        <input type="checkbox" name="keep me logged in" id="keep" />
-        <label for="keep">Keep me logged in</label>
+      <input type="checkbox" name="keepMeLoggedIn" id="keep" ngModel />
+      <label for="keep">Keep me logged in</label>
       </div>
       <div class="div3">
-        <input type="submit" name="register" value="REGISTER" />
+      <input
+        type="submit"
+        name="register"
+        value="REGISTER"
+        [disabled]="registerForm.invalid"
+      />
       </div>
     </form>
   </div>

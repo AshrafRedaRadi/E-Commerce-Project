@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './login-logister.component.css'
 })
 export class LoginLogisterComponent {
+  onSubmit(loginForm: any): void {
+    console.log('Form Submitted:', loginForm.value);
+  }
 
 }

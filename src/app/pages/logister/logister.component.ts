@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './logister.component.css'
 })
 export class LogisterComponent {
+  showPassword: boolean = false;
+  showConfirmPassword: boolean = false;
 
+  onSubmit(registerForm: any): void {
+    console.log('Form submitted successfully!', registerForm.value);
+  }
 }

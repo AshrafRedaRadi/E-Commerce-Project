@@ -101,6 +101,10 @@ header div a:hover {
     font-family: Roboto;
     font-size: .7rem;
 }
+#w-85,#w-86{
+    width: 87%;
+}
+
 .login .form form .div1 ::placeholder{
     color: rgb(165, 161, 161);
 }

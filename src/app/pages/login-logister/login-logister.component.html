@@ -2,7 +2,8 @@
 <header>
   <div>
     <h1>Login / Register</h1>
-    <a routerLink="/">Home</a> - <a routerLink="/login-logister">Login/Register</a>
+    <a routerLink="/">Home</a> -
+    <a routerLink="/login-logister">Login/Register</a>
   </div>
 </header>
 <section class="login">
@@ -16,19 +17,48 @@
   </div>
   <div class="form">
     <h4>LOG IN TO ENTER</h4>
-    <form action="">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
       <div class="div1">
-        <input type="text" name="user name" placeholder="Username" />
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          ngModel
+          #username="ngModel"
+          required
+        />
+        <div *ngIf="username.invalid && username.touched" class="error">
+          <div *ngIf="username.errors?.['required']">Username is required.</div>
+        </div>
       </div>
       <div class="div1">
-        <input type="pass" name="password" placeholder="Password" />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          ngModel
+          #password="ngModel"
+          required
+          minlength="6"
+        />
+        <div *ngIf="password.invalid && password.touched" class="error">
+          <div *ngIf="password.errors?.['required']">Password is required.</div>
+          <div *ngIf="password.errors?.['minlength']">
+            Password must be at least 6 characters long.
+          </div>
+        </div>
       </div>
       <div class="div2">
-        <input type="checkbox" name="keep me logged in" id="keep" />
+        <input type="checkbox" name="keepMeLoggedIn" id="keep" ngModel />
         <label for="keep">Keep me logged in</label>
       </div>
       <div class="div3">
-        <input type="submit" name="log in" value="Log In" />
+        <input
+          type="submit"
+          name="logIn"
+          value="Log In"
+          [disabled]="loginForm.invalid"
+        />
       </div>
     </form>
     <p>Forgot Password?</p>
